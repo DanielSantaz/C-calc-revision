@@ -61,46 +61,46 @@ void enterToReturn(){
 }
 void add()
 {
-double firstNum1;
-double firstNum2;
+double Num1;
+double Num2;
 cout << "What is your first number" << endl;
-cin >> firstNum1;
+cin >> Num1;
 cout << "what is your second number" << endl;
-cin >> firstNum2;
-cout << "Your solution is: " << firstNum1 + firstNum2 << endl << endl;
+cin >> Num2;
+cout << "Your solution is: " << Num1 + Num2 << endl << endl;
 enterToReturn();
 }
 void subtract()
 {
-    double secondNum1;
-    double secondNum2;
+    double Num1;
+    double Num2;
     cout << "What is your first number" << endl;
-    cin >> secondNum1;
+    cin >> Num1;
     cout << "what is your second number" << endl;
-    cin >> secondNum2;
-    cout << "Your solution is: " << secondNum1 - secondNum2 << endl << endl;
+    cin >> Num2;
+    cout << "Your solution is: " << Num1 - Num2 << endl << endl;
     enterToReturn();
 }
 void multiply()
 {
-double thirdNum1;
-double thirdNum2;
+double Num1;
+double Num2;
 cout << "What is your first number" << endl;
-cin >> thirdNum1;
+cin >> Num1;
 cout << "what is your second number" << endl;
-cin >> thirdNum2;
-cout << "Your solution is: " << thirdNum1 * thirdNum2 << endl << endl;
+cin >> Num2;
+cout << "Your solution is: " << Num1 * Num2 << endl << endl;
     enterToReturn();
 }
 
 void divide()
 {
-double fourNum1;
-double fourNum2;
+double Num1;
+double Num2;
 cout << "What is your first number" << endl;
-cin >> fourNum1;
+cin >> Num1;
 cout << "what is your second number" << endl;
-cin >> fourNum2;
-cout << "Your solution is: " << fourNum1 / fourNum2 << endl << endl;
+cin >> Num2;
+cout << "Your solution is: " << Num1 / Num2 << endl << endl;
     enterToReturn();
 }
