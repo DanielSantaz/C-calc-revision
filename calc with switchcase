@@ -1,0 +1,106 @@
+#include <iostream>
+using namespace std;
+//FUNCTION PROTOTYPES
+int Menu(); //Displays Menu
+void add(); //This will do addition :D
+void subtract(); //This will do subtraction :D
+void multiply(); //This will do multiplication :D
+void divide(); //This will do division :D
+void enterToReturn(); //stops the program until you press enter
+//MAIN
+int main()
+{
+    //VARIABLES
+    int choice;
+
+    //INPUT && DO WHILE LOOP
+do {
+    choice = Menu(); // since menu returns an int. choice becomes that returned int from the function.
+    switch (choice) {
+        case 1:
+            add();
+            break;
+        case 2:
+            subtract();
+            break;
+        case 3:
+            multiply();
+            break;
+        case 4:
+            divide();
+            break;
+        default:;
+    }
+}while(choice < 5);
+
+        cout << "\nThank you for using Orlando's Calculator :D bye..." << endl;
+        cout << "Press enter to exit" << endl;
+        cin.ignore();
+        cin.get();
+    return 0;
+}
+
+//FUNCTION DEFINITIONS
+int Menu()
+{
+    int choice;
+    cout << "=============================" << endl;
+    cout << "| Press 1 for addition      |" << endl;
+    cout << "| Press 2 for subtraction   |" << endl;
+    cout << "| Press 3 for multiplication |" << endl;
+    cout << "| Press 4 for division      |" << endl;
+    cout << "| Press 5 to exit           |" << endl;
+    cout << "=============================" << endl;
+    cin >> choice;
+    return choice;
+}
+void enterToReturn(){
+    cout << "Press enter to Return to Menu" << endl;
+    cin.ignore();
+    cin.get();
+}
+void add()
+{
+double firstNum1;
+double firstNum2;
+cout << "What is your first number" << endl;
+cin >> firstNum1;
+cout << "what is your second number" << endl;
+cin >> firstNum2;
+cout << "Your solution is: " << firstNum1 + firstNum2 << endl << endl;
+enterToReturn();
+}
+void subtract()
+{
+    double secondNum1;
+    double secondNum2;
+    cout << "What is your first number" << endl;
+    cin >> secondNum1;
+    cout << "what is your second number" << endl;
+    cin >> secondNum2;
+    cout << "Your solution is: " << secondNum1 - secondNum2 << endl << endl;
+    enterToReturn();
+}
+void multiply()
+{
+double thirdNum1;
+double thirdNum2;
+cout << "What is your first number" << endl;
+cin >> thirdNum1;
+cout << "what is your second number" << endl;
+cin >> thirdNum2;
+cout << "Your solution is: " << thirdNum1 * thirdNum2 << endl << endl;
+    enterToReturn();
+}
+
+void divide()
+{
+double fourNum1;
+double fourNum2;
+cout << "What is your first number" << endl;
+cin >> fourNum1;
+cout << "what is your second number" << endl;
+cin >> fourNum2;
+cout << "Your solution is: " << fourNum1 / fourNum2 << endl << endl;
+    enterToReturn();
+}
